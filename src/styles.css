@@ -1,0 +1,249 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background-color: #f5f6fa;
+  color: #141522;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: min(720px, 100%);
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 18px 40px rgba(20, 21, 34, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card.hero {
+  text-align: center;
+  align-items: center;
+}
+
+.card.success {
+  text-align: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  color: #4a4e69;
+  font-size: 1rem;
+}
+
+.body-text {
+  margin: 0;
+  color: #4a4e69;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  color: #6c6f8a;
+  margin: 0;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(20, 21, 34, 0.1);
+}
+
+.button.primary {
+  background: #1f47ff;
+  color: #ffffff;
+}
+
+.button.primary.large {
+  margin-top: 8px;
+  padding: 14px 22px;
+  font-size: 1rem;
+}
+
+.button.secondary {
+  background: #eef1ff;
+  color: #1f47ff;
+}
+
+.button.ghost {
+  background: transparent;
+  color: #1f47ff;
+  border: 1px solid #d5dafb;
+}
+
+.follow-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 16px;
+  background: #f3f5ff;
+  gap: 12px;
+}
+
+.link-text {
+  font-weight: 600;
+  margin: 0;
+}
+
+.label {
+  margin: 0 0 6px;
+  color: #6c6f8a;
+  font-size: 0.85rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #eceef7;
+}
+
+.platform {
+  margin: 0;
+  font-weight: 600;
+}
+
+.url-text {
+  margin: 6px 0 0;
+  color: #6c6f8a;
+}
+
+.input {
+  margin-top: 6px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #d6daee;
+  width: min(320px, 100%);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #1f47ff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.header-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.status-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #f7f8ff;
+}
+
+.status-platform {
+  font-weight: 600;
+}
+
+.status-text {
+  color: #6c6f8a;
+}
+
+.success-icon {
+  font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 24px;
+  }
+
+  .follow-link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
